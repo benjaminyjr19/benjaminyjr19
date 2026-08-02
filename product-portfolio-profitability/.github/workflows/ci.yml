@@ -1,0 +1,82 @@
+name: CI
+
+# This workflow is written for the project as a standalone repository, where
+# these files sit at the repository root.
+#
+# While the project lives inside a subdirectory of another repository, GitHub
+# only discovers workflows in the root .github/workflows directory, so it is
+# driven by a thin wrapper there that sets the working directory and calls the
+# same steps. See README.md, "Continuous Integration".
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Tests on Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: requirements*.txt
+
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Register the Jupyter kernel
+        run: python -m ipykernel install --user --name python3
+
+      - name: Run the test suite
+        run: pytest -q
+
+  integrity:
+    name: Repository integrity
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Assert the committed notebook has no stored outputs
+        run: python scripts/check_notebook_clean.py
+
+      - name: Assert requirements are pinned
+        run: python scripts/check_requirements_pinned.py
+
+      - name: Assert no source or derived data has been committed
+        run: |
+          committed=$(git ls-files 'data/**/*.csv' 'data/**/*.json' 'data/**/*.parquet')
+          if [ -n "$committed" ]; then
+            echo "Data files must never be committed:"
+            echo "$committed"
+            exit 1
+          fi
+          echo "No data files are tracked."
