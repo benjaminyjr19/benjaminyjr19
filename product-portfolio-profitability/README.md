@@ -532,10 +532,14 @@ repository.
 
 Released under the MIT License. See [LICENSE](LICENSE).
 
+The copyright line names all five contributors: Benjamin Oliver Yick, who
+produced the software engineering treatment in this repository, and Amanda Ng
+Shu Ping, Keane Tan, Mutiara Cahaya Hasdinda, and Zoe Tay Yee Xuan, who authored
+the underlying analysis as group coursework.
+
 The licence covers the code, documentation, and packaging in this repository. It
 does not cover the source dataset, which is not distributed here and whose terms
-are unknown. Contributors to the underlying coursework analysis are named under
-[Acknowledgments](#acknowledgments).
+are unknown.
 
 ## References
 
