@@ -1,0 +1,40 @@
+# Conda environment for the product portfolio profitability analysis.
+#
+# Create with:
+#   conda env create -f environment.yml
+#   conda activate portfolio-profitability
+#
+# Conda supplies the interpreter and pip installs the pinned packages. Every
+# version below is identical to requirements.txt, and that is the set the
+# repository was verified against. Resolving the same pins through conda
+# channels was not verified here, so pip is used to guarantee the environment
+# matches the tested one exactly.
+name: portfolio-profitability
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      # Data handling and numerics
+      - numpy==1.26.4
+      - pandas==2.2.3
+      # scipy is pinned deliberately. statsmodels 0.14.4 imports scipy
+      # internals that were removed in scipy 1.17, so an unpinned resolve
+      # installs a combination that fails at import time.
+      - scipy==1.14.1
+      # Modelling
+      - scikit-learn==1.5.2
+      - statsmodels==0.14.4
+      # Figures
+      - matplotlib==3.9.2
+      # Notebook execution environment
+      - ipykernel==6.29.5
+      - ipython==9.16.0
+      - jupyterlab==4.2.5
+      - nbclient==0.10.0
+      - nbformat==5.10.4
+      # Testing
+      - pytest==8.3.3

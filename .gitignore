@@ -20,3 +20,6 @@ Thumbs.db
 
 # VS Code settings
 .vscode/
+
+# Local virtual environment used to build and test the project
+.venv/

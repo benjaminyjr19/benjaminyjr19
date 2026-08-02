@@ -1,0 +1,26 @@
+# Runtime dependencies for the analysis pipeline and the notebook.
+# Versions are pinned to the set this repository was verified against.
+# Install with: pip install -r requirements.txt
+
+# Data handling and numerics
+numpy==1.26.4
+pandas==2.2.3
+
+# scipy is pinned deliberately. statsmodels 0.14.4 imports scipy internals that
+# were removed in scipy 1.17, so an unpinned resolve installs a combination
+# that fails at import time. See docs/REPRODUCIBILITY.md.
+scipy==1.14.1
+
+# Modelling
+scikit-learn==1.5.2
+statsmodels==0.14.4
+
+# Figures
+matplotlib==3.9.2
+
+# Notebook execution environment
+ipykernel==6.29.5
+ipython==9.16.0
+jupyterlab==4.2.5
+nbclient==0.10.0
+nbformat==5.10.4
