@@ -1,41 +1,68 @@
-# Ben
+# Benjamin Oliver Yick
 
-Software engineering-focused Data Science and Artificial Intelligence undergraduate at Nanyang Technological University, Singapore, with double minors in Business (Banking and Finance Specialization) and Communication Studies.
+Data Science and AI | Decision Systems | Business Analytics
 
-I build backend services, decision-support tools, and applied AI systems with an emphasis on reliability, clarity, and practical impact. My work sits at the intersection of software engineering, analytics, and intelligent systems.
+I build and evaluate systems that turn quantitative analysis into decisions. My work spans applied machine learning, multi-criteria decision modeling and business analytics, with a developing specialization in financial and investment analysis. What connects them is producing a defensible recommendation when the evidence is incomplete and stakeholders disagree.
 
-## Focus Areas
+## Selected Work
 
-- Backend development with Python and API-driven workflows.
-- AI systems and decision-support platforms.
-- Data products, reproducible analysis, and engineering-minded research.
+### [Fashion-MNIST Architecture Study](https://github.com/benjaminyjr19/24S2-SC4001-Fashion-MNIST-Classification)
 
-## Selected Projects
+Controlled comparison of four convolutional architectures trained on one data split, changing a single design variable at a time.
 
-### [MEDF - Multi-stakeholder Ethical Decision Framework for AI Systems](https://github.com/benjaminyjr19/ccds25-0582-medf)
-Final-year project delivering an auditable platform for evaluating AI applications across the EU AI Act ALTAI, NIST AI RMF, and Singapore MGAF.
+- Baseline network, a dilated-convolution variant, a depthwise separable design and the baseline retrained with MixUp augmentation.
+- Accuracy weighed against parameter count, so the efficient model's tradeoff is measured rather than asserted.
+- Error analysis, t-SNE feature visualization and class activation maps for interpretability.
 
-- Built a FastAPI backend and Streamlit frontend for end-to-end evaluation workflows.
-- Implemented stakeholder-weighted MCDA scoring, conflict analysis, and Pareto tradeoff evaluation.
-- Designed the system for traceability, reproducibility, and deployment readiness.
+### [Regression Analysis of Mortality Determinants](https://github.com/benjaminyjr19/24S2-CS2400-Regression-Analysis)
 
-### [24S2-CS2400 Regression Analysis](https://github.com/benjaminyjr19/24S2-CS2400-Regression-Analysis)
-Statistical modeling project exploring socioeconomic determinants of mortality through multiple and polynomial regression analysis.
+Multiple and polynomial regression on socioeconomic predictors of regional death rates.
 
-- Developed the analysis workflow in Python and Jupyter with visualization, correlation analysis, and residual evaluation.
-- Modeled both linear and non-linear relationships in real-world public health data.
-- Translated results into evidence-based recommendations with clear analytical interpretation.
+- Correlation analysis, model fitting and residual diagnostics in Python and Jupyter.
+- Non-linear structure modeled where a linear fit understated the relationship.
+- Written up as a findings report with proposed additional predictors.
 
-## Technical Toolkit
+## Technical Focus
 
-`Python` `FastAPI` `Streamlit` `SQL` `Git` `GitHub` `REST APIs` `Pandas` `NumPy` `scikit-learn` `Jupyter`
+- Languages: Python, SQL, JavaScript
+- Modeling and analysis: pandas, NumPy, scikit-learn, SciPy, PyTorch
+- Services and interfaces: FastAPI, Streamlit, Matplotlib, Seaborn
+- Data and engineering: MySQL, SQLAlchemy, pytest, Git
 
-## Interests
+My final-year project applied this stack to AI governance. It scored AI deployments against the EU ALTAI, the NIST AI Risk Management Framework and Singapore's Model AI Governance Framework, combining TOPSIS ranking, Spearman rank correlation to quantify stakeholder disagreement and NSGA-II search for Pareto-optimal consensus, under a suite of 105 automated tests.
 
-Software engineering, applied AI, developer tooling, and data-driven product development.
+Earlier engineering work at School on Cloud Asia covered digital library and educational game features for a preschool learning platform, built with HTML, CSS, JavaScript and MySQL, with machine learning applied to engagement data to inform content decisions.
 
-## Connect
+## Business and Analytical Focus
 
-- [LinkedIn](https://www.linkedin.com/in/benjaminyjr17).
-- [ORCID](https://orcid.org/0009-0007-8460-3595).
-- Academic Email: `BENJ0045@E.NTU.EDU.SG`.
+- Multi-criteria decision analysis, weighted scoring and Pareto methods for problems with competing stakeholders.
+- Financial modeling and valuation, including a leveraged buyout model with scenario analysis, sensitivity analysis and an investment memorandum on capital structure risk.
+- Consumer and market analytics, including survey-based segmentation and brand equity analysis supported by clustering.
+- Natural language processing applied to sentiment and crisis communication analysis.
+
+This work is coursework and competition output rather than public code. It includes a leveraged buyout analysis of Nilörngruppen AB, a consumer study of Oatside and TruthGuard, a machine learning content-verification prototype built by a team that placed in the top ten at CCDS TechFest 2025.
+
+## Current Development
+
+- Incoming Master of Information Management at KU Leuven, Faculty of Economics and Business.
+- CFA® Program candidate, currently registered for the Level I exam.
+- Extending the decision-modeling work toward information management and investment analysis.
+
+## Education
+
+Nanyang Technological University
+
+- Bachelor of Computing (Hons) in Data Science and Artificial Intelligence
+- Completed June 2026
+- Minors in Business, with a Banking and Finance specialization, and in Communication Studies
+
+KU Leuven
+
+- Incoming Master of Information Management
+- September 2026
+
+## Contact
+
+- [Benjamin Oliver Yick on LinkedIn](https://www.linkedin.com/in/benjaminyjr19/)
+
+CFA® and Chartered Financial Analyst® are registered trademarks owned by CFA Institute.
