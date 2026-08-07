@@ -12,14 +12,14 @@ I build backend services, decision-support tools, and applied AI systems with an
 
 ## Selected Projects
 
-### [MEDF - Multi-stakeholder Ethical Decision Framework for AI Systems](https://github.com/benjaminyjr17/ccds25-0582-medf)
+### [MEDF - Multi-stakeholder Ethical Decision Framework for AI Systems](https://github.com/benjaminyjr19/ccds25-0582-medf)
 Final-year project delivering an auditable platform for evaluating AI applications across the EU AI Act ALTAI, NIST AI RMF, and Singapore MGAF.
 
 - Built a FastAPI backend and Streamlit frontend for end-to-end evaluation workflows.
 - Implemented stakeholder-weighted MCDA scoring, conflict analysis, and Pareto tradeoff evaluation.
 - Designed the system for traceability, reproducibility, and deployment readiness.
 
-### [24S2-CS2400 Regression Analysis](https://github.com/benjaminyjr17/24S2-CS2400-Regression-Analysis)
+### [24S2-CS2400 Regression Analysis](https://github.com/benjaminyjr19/24S2-CS2400-Regression-Analysis)
 Statistical modeling project exploring socioeconomic determinants of mortality through multiple and polynomial regression analysis.
 
 - Developed the analysis workflow in Python and Jupyter with visualization, correlation analysis, and residual evaluation.
