@@ -6,9 +6,9 @@ I build and evaluate systems that turn quantitative analysis into decisions. My 
 
 ## Selected Work
 
-### [Multi-Stakeholder Ethical Decision Framework for AI](https://github.com/benjaminyjr19/ccds25-0582-medf)
+### Multi-Stakeholder Ethical Decision Framework for AI
 
-Final-year decision-support platform that evaluates AI deployments against three governance frameworks: the EU ALTAI, the NIST AI Risk Management Framework and Singapore's Model AI Governance Framework.
+Final-year decision-support platform that evaluates AI deployments against three governance frameworks: the EU ALTAI, the NIST AI Risk Management Framework and Singapore's Model AI Governance Framework. The source repository is private.
 
 - FastAPI service with a Streamlit dashboard, backed by SQLAlchemy persistence and version-controlled YAML framework definitions.
 - TOPSIS and weighted sum scoring across six unified evaluation dimensions.
@@ -17,18 +17,18 @@ Final-year decision-support platform that evaluates AI deployments against three
 
 ### [Fashion-MNIST Architecture Study](https://github.com/benjaminyjr19/24S2-SC4001-Fashion-MNIST-Classification)
 
-Controlled comparison of four convolutional architectures trained on one data split, changing a single design variable at a time.
+Controlled comparison of four CNN configurations (three architectures and one augmentation variant) on the standard Fashion-MNIST split, changing one design variable at a time.
 
 - Baseline network, a dilated-convolution variant, a depthwise separable design and the baseline retrained with MixUp augmentation.
 - Accuracy weighed against parameter count, so the efficient model's tradeoff is measured rather than asserted.
 - Error analysis, t-SNE feature visualization and class activation maps for interpretability.
 
-### [Regression Analysis of Mortality Determinants](https://github.com/benjaminyjr19/24S2-CS2400-Regression-Analysis)
+### Regression Analysis of Mortality Determinants
 
-Multiple and polynomial regression on socioeconomic predictors of regional death rates.
+Multiple and polynomial regression on socioeconomic predictors of regional death rates. The source repository is private.
 
 - Correlation analysis, model fitting and residual diagnostics in Python and Jupyter.
-- Non-linear structure modeled where a linear fit understated the relationship.
+- A two-predictor linear model reached an R² of 0.56. A quadratic term on the strongest single predictor added almost nothing over a straight-line fit (R² of 0.4157 against 0.4144).
 - Written up as a findings report with proposed additional predictors.
 
 ## Technical Focus
