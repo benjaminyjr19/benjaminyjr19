@@ -51,7 +51,7 @@ This work is coursework and competition output rather than public code. It inclu
 
 ## Current Development
 
-- Incoming Master of Information Management at KU Leuven, Faculty of Economics and Business.
+- Currently studying the Master of Information Management at KU Leuven, Faculty of Economics and Business.
 - CFA® Program candidate, currently registered for the Level I exam.
 - Extending the decision-modeling work toward information management and investment analysis.
 
@@ -65,7 +65,7 @@ Nanyang Technological University
 
 KU Leuven
 
-- Incoming Master of Information Management.
+- Currently studying the Master of Information Management.
 - September 2026.
 
 ## Contact
